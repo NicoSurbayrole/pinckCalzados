@@ -1,7 +1,8 @@
+import styles from "./itemListContainer.module.css";
 
 const ItemListContainer = ({greeting}) => {
     return (
-        <div style={{textAlign: "center", marginTop: "15px" }} >
+        <div className={styles.itemListContainer} >
             <h1>{greeting}</h1>
         </div>
     )

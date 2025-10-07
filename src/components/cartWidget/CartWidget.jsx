@@ -1,7 +1,8 @@
+import styles from "./cartWidget.module.css";
 
 const CartWidget = () => {
     return(
-            <div style={{ fontSize: "20px", cursor: "pointer" }}>
+            <div className={styles.cart}>
                 🛒<span>0</span>
             </div>
     )

@@ -7,7 +7,7 @@
   --color-text-muted: #263238;
 }
 
-.nav-bar {
+.navBar {
   display: flex;
   align-items: center;
   min-height: 100px;
@@ -15,16 +15,16 @@
   color: var(--color-text);
 }
 
-.logo-container,
-.nav-items-container,
-.carrito-compras-container {
+.logoContainer,
+.navItemsContainer,
+.carritoComprasContainer {
   width: 33.3%;
   display: flex;
   justify-content: center;
 }
 
 
-.nav-items-container ul {
+.navItemsContainer ul {
   width: 100%;
   display: flex;
   text-align: center;
@@ -32,13 +32,13 @@
   font-size: 20px;
 }
 
-.nav-links {
+.navLinks {
   text-decoration: none;
   color: var(--color-text);
   width: 25%;
 }
 
-.nav-links:hover {
+.navLinks:hover {
   cursor: pointer;
   color: var(--color-accent);
   border-radius: 25px;
