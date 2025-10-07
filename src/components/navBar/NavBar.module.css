@@ -15,33 +15,3 @@
   color: var(--color-text);
 }
 
-.logoContainer,
-.navItemsContainer,
-.carritoComprasContainer {
-  width: 33.3%;
-  display: flex;
-  justify-content: center;
-}
-
-
-.navItemsContainer ul {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  list-style: none;
-  font-size: 20px;
-}
-
-.navLinks {
-  text-decoration: none;
-  color: var(--color-text);
-  width: 25%;
-}
-
-.navLinks:hover {
-  cursor: pointer;
-  color: var(--color-accent);
-  border-radius: 25px;
-  transform: translateY(-5px);
-  transition: all 0.5s ease-in-out;
-}
