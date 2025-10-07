@@ -1,18 +1,14 @@
-import NavBar from './components/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
+import NavBar from './components/navbar/NavBar'
+import ItemListContainer from './components/itemListContainer/ItemListContainer'
 
 function App() {
 
   return (
     <>
-      <header>
         <NavBar/>
-      </header>
-      <main>
-        <ItemListContainer/>
-      </main>
+        <ItemListContainer greeting={"Bienvenido a Pinck Calzados!"}/>
     </>
   )
 }
 
-export default App
+export default App;
