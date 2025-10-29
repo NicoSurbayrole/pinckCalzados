@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title>Error 404 – Página no encontrada</title>
+  <desc>Versión v2 con 404 más arriba y texto con máximo contraste.</desc>
+
+  <rect width="1200" height="640" fill="#FFFFFF"/>
+
+  <!-- Subtle decorations -->
+  <g opacity="0.04" fill="#0D47A1">
+    <circle cx="1080" cy="110" r="170"/>
+    <circle cx="120"  cy="570" r="190"/>
+  </g>
+
+  <defs>
+    <!-- Strong soft shadow to lift text -->
+    <filter id="txtShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+    <!-- Outline for text to guarantee visibility -->
+    <filter id="strokeOutline" x="-50%" y="-50%" width="200%" height="200%">
+      <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"/>
+      <feColorMatrix in="DILATED" type="matrix" values="0 0 0 0 1
+                                                         0 0 0 0 1
+                                                         0 0 0 0 1
+                                                         0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 404 block (moved UP) -->
+  <g font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="320" y="250" font-size="240" fill="#0D47A1" filter="url(#txtShadow)">4</text>
+    <!-- Center ring '0' -->
+    <g>
+      <circle cx="600" cy="220" r="130" fill="none" stroke="#0A45A0" stroke-width="30"/>
+      <circle cx="600" cy="220" r="93"  fill="none" stroke="#92ACD1"    stroke-width="12" opacity="0.9"/>
+    </g>
+    <text x="880" y="250" font-size="240" fill="#0D47A1" filter="url(#txtShadow)">4</text>
+  </g>
+
+  <!-- Sneaker slightly smaller so it doesn't collide with text -->
+  <g transform="translate(500,130) scale(0.95)">
+    <ellipse cx="118" cy="128" rx="98" ry="10" fill="#000" opacity="0.06"/>
+    <path d="M20,95 C10,95 8,86 16,82 L56,64 L92,36 C104,27 118,25 128,30 L184,60 C195,66 202,78 202,91 L202,100 C202,108 196,114 188,114 L42,114 C31,114 22,106 20,95 Z" fill="#0D47A1" />
+    <path d="M28,104 L190,104 C195,104 199,108 199,113 L199,116 L28,116 C22,116 18,112 18,107 C18,105 21,104 23,104 Z" fill="#FFFFFF" />
+    <rect x="20" y="116" width="185" height="8" rx="4" fill="#0A45A0" />
+    <g stroke="#FFFFFF" stroke-width="4" stroke-linecap="round">
+      <line x1="76" y1="70" x2="58" y2="82"/>
+      <line x1="92" y1="64" x2="74" y2="78"/>
+      <line x1="108" y1="58" x2="90" y2="72"/>
+      <line x1="124" y1="54" x2="106" y2="68"/>
+    </g>
+    <path d="M24,88 Q30,72 44,68 L54,72 Q46,84 40,96 L28,96 Q24,93 24,88 Z" fill="#92ACD1"/>
+    <path d="M142,66 L132,72 L152,84 L162,78 Z" fill="#92ACD1" opacity="0.9"/>
+  </g>
+
+  <!-- Copy area with guaranteed readability -->
+  <!-- Backplate (white) -->
+  <rect x="180" y="340" width="840" height="180" rx="16" fill="#FFFFFF" opacity="0.98"/>
+  <!-- Title -->
+  <g font-family="Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="400" font-size="44" fill="#0D47A1" font-weight="900" filter="url(#strokeOutline)">¡Ups! Página no encontrada</text>
+    <text x="600" y="450" font-size="22" fill="#0A45A0" font-weight="700">El enlace puede haber cambiado o no existir.</text>
+  </g>
+</svg>
